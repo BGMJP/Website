@@ -329,132 +329,32 @@ function ServiceModalInternal({
                 </>
               )}
 
-              {/* 첫 번째 슬라이드 - 아마존 셀러 계정, 가상계좌 생성 */}
+              {/* 첫 번째 슬라이드 - 아마존 셀러 계정, 가상계좌 생성 */
               {currentImageIndex === 0 && (
                 <div className="w-full h-full relative">
-                  <div className="w-full h-full flex">
-                    {/* 왼쪽 영역 - 옅은 회색 사각형 */}
-                    <div className="w-1/2 h-full bg-[#F8F9FA] flex flex-col justify-center px-16 py-12">
-                      <div className="space-y-6">
-                        <h2 className="text-[36px] font-bold leading-tight tracking-[-0.01em] text-[#212529]">
-                          아마존 셀러 계정, 가상계좌 생성
-                        </h2>
-                        
-                        <p className="text-[16px] leading-[160%] text-[#868E96]">
-                          아마존 글로벌셀링의 첫 시작이자 첫 장벽
-                        </p>
-                        
-                        {/* 강조선 - 32px 길이, 2px 굵기, Accent 컬러 */}
-                        <div className="w-8 h-0.5 bg-[#FFB800]"></div>
-                        
-                        {/* 체크리스트 - 4가지 항목 */}
-                        <div className="space-y-4">
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              셀러 유형 분석 및 최적의 계정 설계
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              100% 승인을 위한 완벽한 서류 준비 및 가이드
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              판매 대금 수취용 가상계좌 발급, 연동 및 설정
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              계정 생성 실패/거절 사례 분석 및 선제적 대응
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* 오른쪽 영역 - 이미지 사각형 */}
-                    <div className="w-1/2 h-full pb-[60px] p-4 flex items-center justify-center">
-                      <div className="w-full h-full">
-                        <img 
-                          src="https://live.staticflickr.com/65535/54797404699_6c80e6bf0e_b.jpg"
-                          alt="아마존 셀러 계정 가입 화면"
-                          className="w-full h-full object-contain object-center rounded-lg"
-                        />
-                      </div>
-                    </div>
+                  <div className="w-full h-full flex items-center justify-center p-4">
+                    <img
+                      src="https://hs3056.github.io/servicesection1/1-1.png"
+                      alt="계정 & 브랜드 등록 - 고해상도 이미지"
+                      className="w-full h-full object-contain rounded-lg"
+                      decoding="async"
+                      loading="eager"
+                    />
                   </div>
                 </div>
               )}
 
-              {/* 두 번째 슬라이드 - 상표권 확보, 브랜드 권한의 시작 */}
+              {/* 두 번째 슬라이드 - 상표권 확보, 브랜드 권한의 시작 */
               {currentImageIndex === 1 && (
                 <div className="w-full h-full relative">
-                  <div className="w-full h-full flex">
-                    {/* 왼쪽 영역 - 옅은 회색 사각형 */}
-                    <div className="w-1/2 h-full bg-[#F8F9FA] flex flex-col justify-center px-16 py-12">
-                      <div className="space-y-6">
-                        <h2 className="text-[36px] font-bold leading-tight tracking-[-0.01em] text-[#212529]">
-                          상표권 확보, 브랜드 권한의 시작
-                        </h2>
-                        
-                        <p className="text-[16px] leading-[160%] text-[#868E96]">
-                          브랜드를 지키는 첫 관문, 단순 절차가 아닙니다
-                        </p>
-                        
-                        {/* 강조선 - 32px 길이, 2px 굵기, Accent 컬러 */}
-                        <div className="w-8 h-0.5 bg-[#FFB800]"></div>
-                        
-                        {/* 체크리스트 - 4가지 항목 */}
-                        <div className="space-y-4">
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              판매 국가별 상표권 출원 및 등록
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              아마존 브랜드 레지스트리(Brand Registry) 등록 및 승인
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              프리미엄 A+ 콘텐츠, 브랜드 광고 도구 등 아마존 브랜드 기능 활성화
-                            </p>
-                          </div>
-                          
-                          <div className="flex items-start gap-3 p-4 bg-white/50 rounded-lg border border-white/20 shadow-sm">
-                            <CheckCircle className="w-5 h-5 text-[#FFB800] flex-shrink-0 mt-0.5" />
-                            <p className="text-[14px] leading-[160%] text-[#212529]">
-                              브랜드 권한 침해 및 하이재킹 모니터링 및 대응
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* 오른쪽 영역 - 이미지 사각형 */}
-                    <div className="w-1/2 h-full pb-[60px] p-4 flex items-center justify-center">
-                      <div className="w-full h-full">
-                        <img 
-                          src="https://live.staticflickr.com/65535/54797505995_ea1105569a_b.jpg"
-                          alt="USPTO 상표권 등록 화면"
-                          className="w-full h-full object-contain object-center rounded-lg"
-                        />
-                      </div>
-                    </div>
+                  <div className="w-full h-full flex items-center justify-center p-4">
+                    <img
+                      src="https://hs3056.github.io/servicesection1/1-2.png"
+                      alt="계정 & 브랜드 등록 - 고해상도 이미지 (슬라이드 2)"
+                      className="w-full h-full object-contain rounded-lg"
+                      decoding="async"
+                      loading="eager"
+                    />
                   </div>
                 </div>
               )}
