@@ -329,7 +329,7 @@ function ServiceModalInternal({
                 </>
               )}
 
-              {/* 첫 번째 슬라이드 - 아마존 셀러 계정, 가상계좌 생성 */
+              {/* 첫 번째 슬라이드 - 아마존 셀러 계정, 가상계좌 생성 */}
               {currentImageIndex === 0 && (
                 <div className="w-full h-full relative">
                   <div className="w-full h-full flex items-center justify-center p-4">
@@ -344,7 +344,7 @@ function ServiceModalInternal({
                 </div>
               )}
 
-              {/* 두 번째 슬라이드 - 상표권 확보, 브랜드 권한의 시작 */
+              {/* 두 번째 슬라이드 - 상표권 확보, 브랜드 권한의 시작 */}
               {currentImageIndex === 1 && (
                 <div className="w-full h-full relative">
                   <div className="w-full h-full flex items-center justify-center p-4">
