@@ -1,0 +1,15 @@
+# 자동 블로그 동기화 워크플로우는 비활성화되었습니다
+# 현재는 정적 블로그 섹션을 사용하고 있습니다
+
+name: Daily Blog Sync (Disabled)
+on:
+  # 스케줄링 비활성화
+  # schedule:
+  #   - cron: '0 15 * * *'  # UTC 15:00 = KST 00:00
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disabled
+        run: echo "Blog sync workflow is disabled. Using static content."
