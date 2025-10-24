@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     sitemap({
-      hostname: 'https://amzcarry.netlify.app', // 실제 도메인으로 변경하세요
+      hostname: 'https://amzcarry.com', // 실제 도메인으로 변경하세요
       dynamicRoutes: ['/'],
       changefreq: 'weekly',
       priority: 1.0,
