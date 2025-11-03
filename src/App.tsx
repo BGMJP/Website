@@ -6,6 +6,7 @@ import { PortfolioSection } from "./components/PortfolioSection";
 import { PricingSection } from "./components/PricingSection";
 import { BlogSection } from "./components/BlogSection";
 import { ContactSection } from "./components/ContactSection";
+import { FAQSection } from "./components/FAQSection";
 import { Footer } from "./components/Footer";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { useEffect, useState, useCallback } from "react";
@@ -92,6 +93,7 @@ export default function App() {
           <ServicesSection />
           <PortfolioSection />
           <PricingSection />
+          <FAQSection />
           <BlogSection />
           <ContactSection />
         </main>

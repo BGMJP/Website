@@ -759,7 +759,7 @@ export function BlogSection() {
         `
       }} />
 
-      <section id="blog" className="py-32 sm:py-40 bg-gradient-to-br from-section via-white to-section/30 relative">
+      <section id="blog" className="py-16 sm:py-20 bg-gradient-to-br from-section via-white to-section/30 relative">
         {/* Decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div 
