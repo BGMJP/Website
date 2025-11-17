@@ -79,19 +79,22 @@ export function FAQSection() {
                     <span className="flex-1">{faq.question}</span>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent 
-                  className="px-6 sm:px-8 pb-6"
+                <div 
                   itemScope 
                   itemProp="acceptedAnswer" 
                   itemType="https://schema.org/Answer"
                 >
-                  <div itemProp="text" className="pl-8 sm:pl-11">
-                    <p className="text-base sm:text-lg text-[#212529] leading-relaxed whitespace-pre-line">
-                      <span className="text-[#FFB800] font-bold">A.</span>{" "}
-                      {faq.answer}
-                    </p>
-                  </div>
-                </AccordionContent>
+                  <AccordionContent 
+                    className="px-6 sm:px-8 pb-6"
+                  >
+                    <div itemProp="text" className="pl-8 sm:pl-11">
+                      <p className="text-base sm:text-lg text-[#212529] leading-relaxed whitespace-pre-line">
+                        <span className="text-[#FFB800] font-bold">A.</span>{" "}
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </div>
               </AccordionItem>
             ))}
           </Accordion>
