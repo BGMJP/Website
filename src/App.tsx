@@ -11,11 +11,14 @@ import { Footer } from "./components/Footer";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { useEffect, useState, useCallback } from "react";
 import { MessageCircle, ClipboardCheck } from "lucide-react";
+import eulaContent from "../EULA.md?raw";
+import privacyContent from "../Privacy_Policy.md?raw";
 
 export default function App() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [expandedFab, setExpandedFab] = useState<string | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const path = typeof window !== "undefined" ? window.location.pathname : "/";
 
   // Simplified scroll handler
   const handleScroll = useCallback(() => {
@@ -69,7 +72,35 @@ export default function App() {
     }
   }, [isMobile]);
 
+  if (path.startsWith("/legal/eula")) {
+    return (
+      <ErrorBoundary>
+        <div className="min-h-screen bg-white">
+          <Header />
+          <main className="max-w-3xl mx-auto px-4 py-16">
+            <h1 className="text-2xl font-semibold mb-6">EULA</h1>
+            <pre className="whitespace-pre-wrap text-sm leading-relaxed">{eulaContent}</pre>
+          </main>
+          <Footer />
+        </div>
+      </ErrorBoundary>
+    );
+  }
 
+  if (path.startsWith("/legal/privacy")) {
+    return (
+      <ErrorBoundary>
+        <div className="min-h-screen bg-white">
+          <Header />
+          <main className="max-w-3xl mx-auto px-4 py-16">
+            <h1 className="text-2xl font-semibold mb-6">Privacy Policy</h1>
+            <pre className="whitespace-pre-wrap text-sm leading-relaxed">{privacyContent}</pre>
+          </main>
+          <Footer />
+        </div>
+      </ErrorBoundary>
+    );
+  }
 
   return (
     <ErrorBoundary>
