@@ -94,6 +94,17 @@ ${formData.message || '상세 문의사항 없음'}
       const result = await response.json();
 
       if (result.success) {
+        // 아사나 태스크 생성 (백그라운드에서 실행, 실패해도 사용자에게 영향 없음)
+        try {
+          await fetch('/.netlify/functions/create-asana-task', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+          });
+        } catch (asanaError) {
+          console.error('아사나 태스크 생성 실패:', asanaError);
+        }
+
         alert('상담 요청이 성공적으로 접수되었습니다. 24시간 내에 연락드리겠습니다.');
         
         // 폼 초기화
